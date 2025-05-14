@@ -29,7 +29,7 @@ export default function HistoryScreen() {
   useEffect(() => {
     if (highlightedId) {
       const timer = setTimeout(() => {
-        setHighlightedId(null); // tira o destaque após 2 segundos
+        setHighlightedId(null); 
       }, 2000);
       return () => clearTimeout(timer);
     }
@@ -55,7 +55,7 @@ export default function HistoryScreen() {
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
-                  setHighlightedId(item.id); // destaca o item
+                  setHighlightedId(item.id);
                   router.push(`/details?date=${item.date}&mood=${item.mood}`);
                 }}
               >
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   highlightedCard: {
-    backgroundColor: '#FFF176', // amarelo claro para destaque
+    backgroundColor: '#FFF176',
   },
   moodEmoji: {
     fontSize: 48,

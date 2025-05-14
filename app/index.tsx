@@ -38,7 +38,7 @@ export default function HomeScreen() {
       </View>
 
       <TouchableOpacity style={styles.button} onPress={handleShowActionSheet}>
-        <Text style={styles.buttonText}>Mostrar Opções </Text>
+        <Text style={styles.buttonText}>Mostrar minhas Opções </Text>
       </TouchableOpacity>
     </View>
   );
